@@ -5,7 +5,6 @@
       <p class="intro-content" >Projeto integrador para o curso de engenharia da computação da UNIVESP</p>
       <p class="intro-content">Polo Guarulhos</p>
       <p class="intro-content" >2o. Semestre 2023</p>
-      <p class="intro-content">Veja abaixo os últimos posts com dicas para um bom desenvolvimento de aplicações web.</p>
     </section>
     <PostList :posts="loadedPosts" />
     <section class="intro">
