@@ -1,0 +1,7 @@
+---
+applications:
+  - name: leon-neves-myblog
+    memory: 36M
+    buildpacks:
+    - staticfile_buildpack
+    
