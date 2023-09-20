@@ -2,7 +2,8 @@ import Vuex from 'vuex'
 import axios from 'axios'
 import Cookie from 'js-cookie'
 
-const { fireBApiKey } = require( '../.env' )
+// const { fireBApiKey } = require( '../.env' )
+const fireBApiKey = 'AIzaSyA-jCkAlPrWZbdUbP2m0SrVlcMYgH8oTVI'
 
 const createStore = () => {
     return new Vuex.Store({
@@ -34,7 +35,7 @@ const createStore = () => {
         },
         actions: {
             nuxtServerInit( vuexContext, context ) {
-                return axios.get(process.env.baseUrl + '/posts.json')
+                return axios.get('https://leon-nuxt-blog.firebaseio.com/posts.json')
                 .then(res => {
                     const postsArray = []
                     for ( const key in res.data ) {

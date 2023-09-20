@@ -61,7 +61,12 @@ export default {
     */
     extend (config, ctx) {
     }
-  }, env: {
+  },
+  server: {
+    port: process.env.PORT || 3000, // Default port is 3000
+    host: '0.0.0.0', // Listen on all available network interfaces
+  },  
+  env: {
     baseUrl: process.env.BASE_URL || 'https://leon-nuxt-blog.firebaseio.com'
   },
   transition: {

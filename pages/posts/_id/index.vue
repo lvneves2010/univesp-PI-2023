@@ -24,7 +24,8 @@ export default {
         loadedPost: context.payload.postData
       }
     }
-    return axios.get(process.env.baseUrl + '/posts/' + context.params.id + '.json')
+    // return axios.get(process.env.baseUrl + '/posts/' + context.params.id + '.json')
+    return axios.get('https://leon-nuxt-blog.firebaseio.com/posts/' + context.params.id + '.json')
     .then(res => {
       return {
         loadedPost: res.data
