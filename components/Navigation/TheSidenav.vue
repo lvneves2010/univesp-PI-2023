@@ -12,8 +12,7 @@
         class="nav-list"
         @click="$emit('close')">
         <li class="nav-item"><nuxt-link to="/posts">Blog</nuxt-link></li>
-        <li class="nav-item"><nuxt-link to="/about">About</nuxt-link></li>
-        <li class="nav-item"><a href="https://leon-neves-resume.mybluemix.net/">My profile</a></li>
+        <li class="nav-item"><nuxt-link to="/about">Sobre nós</nuxt-link></li>
         <li class="nav-item"><nuxt-link to="/admin">Admin</nuxt-link></li>
       </ul>
     </div>
